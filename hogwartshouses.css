@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+.navbar{
+    background-color: black;
+    height: 60px;
+}
+
+.navbar-brand{
+    font-weight: see;
+    color: aqua;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.navbar-brand:hover,.nav-link.active{
+    color: white;
+}
+
+.navbar-toggler{
+    boarder:none;
+    font: size 1.25em; 
+    
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color:red;
+    font-weight: 500;
+}
+
+.nav-link:hover,.nav-link.active {
+    color: gray;
+}
+
+@media (min-width: 991px){
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom:0 ;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: aquamarine;
+    visibility: hidden;
+    transition: 0.3 ease-in-out;
+}
+
+
+.nav-link:hover::before,.nav-link.nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+
+}
+}
+
+
+body{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(back\ hou.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 4s linear;
+    animation: bAnimation 11s linear infinite;
+}
+.description{
+
+position: absolute;
+top: 50%;
+left: 60px;
+transform: translateY(-50%);
+font-family:sans-serif ;
+}
+
+.description span{
+    color:white;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.description h1 {
+    font-size: 55px;
+}
+
+.description p{
+    max-width: 100%;
+    width: 500px;
+    line-height: 1.5;
+}
+
+.image_slider{
+    width:430;
+    position:absolute;
+    top: 50%;   
+    right: 60px;
+    transform:translateY(-30%);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.image_container{
+    display:flex;
+    gap:20px;
+    transition: all 3s linear;
+    animation: imganime 11s linear infinite;
+}
+
+.image_container img{
+    width: 200px;
+    height:250px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+@keyframes imganime{
+   0% {
+    transform: translateX(0);
+   }5%{
+    transform: translateX(0);
+   }10%{
+    transform: translateX(0);
+   }15%{
+    transform: translateX(0);
+   }20%{
+    transform: translateX(-220px);
+   }25%{
+    transform: translateX(-220px);
+   }30%{
+    transform: translateX(-220px);
+   }35%{
+    transform: translateX(-220px);
+   }40%{
+    transform: translateX(-220px);
+   }45%{
+    transform: translateX(-220px);
+   }50%{
+    transform: translateX(-440px);
+   }55%{
+    transform: translateX(-440px);
+   }60%{
+    transform: translateX(-440px);
+   }65%{
+    transform: translateX(-440px);
+   }70%{
+    transform: translateX(-440px);
+   }75%{
+    transform: translateX(-650px);
+   }80%{
+    transform: translateX(-650px);
+   }85%{
+    transform: translateX(-650px);
+   }90%{
+    transform: translateX(-650px);
+   }95%{
+    transform: translateX(-650px);
+   }100%{
+    transform: translateX(0);
+   }
+}
+
+@keyframes bAnimation{
+    0% {
+        background-image: url(Slytherin.jpg);
+       }5%{
+        background-image: url(Slytherin.jpg);
+       }10%{
+        background-image: url(Slytherin.jpg);
+       }15%{
+        background-image: url(Slytherin.jpg);
+       }20%{
+        background-image: url(Ravenclaw.jpg);
+       }25%{
+        background-image: url(Ravenclaw.jpg);
+       }30%{
+        background-image: url(Ravenclaw.jpg);
+       }35%{
+        background-image: url(Ravenclaw.jpg);
+       }40%{
+        background-image: url(Ravenclaw.jpg);
+       }45%{
+        background-image: url(Ravenclaw.jpg);
+       }50%{
+        background-image: url(Hufflepuff.jpg);
+       }55%{
+        background-image: url(Hufflepuff.jpg);
+       }60%{
+        background-image: url(Hufflepuff.jpg);
+       }65%{
+        background-image: url(Hufflepuff.jpg);
+       }70%{
+        background-image: url(Hufflepuff.jpg);
+       }75%{
+        background-image: url(Gryffindor.jpg);
+       }80%{
+        background-image: url(Gryffindor.jpg);
+       }85%{
+        background-image: url(Gryffindor.jpg);
+       }90%{
+        background-image: url(Gryffindor.jpg);
+       }95%{
+        background-image: url(Gryffindor.jpg);
+       }100%{
+        background-image: url(Slytherin.jpg);
+       }
+
+}
